@@ -1,0 +1,644 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+main {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400;
+  div {
+    &.mainText {
+      p {
+        text-align: center;
+        &.title {
+          font-weight: 600;
+          color: v.$drk-grysh-blu;
+          font-size: 1.8rem;
+          margin: 4rem 2rem 1rem 2rem;
+        }
+        &.text {
+          font-weight: 400;
+          color: v.$grysh-blu;
+          line-height: 1.6rem;
+          margin: 0.8rem 2rem;
+        }
+      }
+      &.last {
+        p {
+          &.text {
+            margin: 0.8rem 2.2rem;
+          }
+        }
+      }
+    }
+    &.middle {
+      img {
+        width: 85%;
+        margin: 3rem 0rem;
+      }
+      .middleDiv {
+        .middleText {
+          p {
+            text-align: center;
+            &.title {
+              font-weight: 600;
+              color: v.$drk-grysh-blu;
+              font-size: 1.5rem;
+              margin: 0.5rem 0rem;
+            }
+            &.text {
+              color: v.$grysh-blu;
+              line-height: 1.5rem;
+              margin: 0.8rem 2.5rem 3rem 2.5rem;
+            }
+          }
+        }
+        :last-child {
+          margin-bottom: 6rem;
+        }
+      }
+    }
+    &.features {
+      div {
+        &.feature {
+          img {
+            width: 2.8rem;
+            margin: 3rem 0rem 2rem 0rem;
+          }
+          p {
+            text-align: center;
+            &.title {
+              font-weight: 600;
+              color: v.$drk-grysh-blu;
+              font-size: 1.5rem;
+              margin: 0.5rem 2rem 0.5rem 2rem;
+            }
+            &.text {
+              color: v.$grysh-blu;
+              line-height: 1.6rem;
+              margin: 0.8rem 2rem;
+            }
+          }
+        }
+      }
+      :first-child {
+        margin-top: 2rem;
+      }
+      :nth-child(2) {
+        &.feature {
+          img {
+            width: 2.5rem;
+          }
+        }
+      }
+      :last-child {
+        margin-bottom: 5rem;
+      }
+    }
+    &.companies {
+      width: 100%;
+      img {
+        width: 7rem;
+        margin: 2rem 0rem;
+      }
+      :first-child {
+        width: 8rem;
+      }
+      :nth-child(3) {
+        width: 8rem;
+      }
+      :last-child {
+        width: 6.5rem;
+        margin: 2rem 0rem 7rem 0rem;
+      }
+    }
+    &.download {
+      width: 100%;
+      margin-bottom: 5rem;
+      button {
+        cursor: pointer;
+        font-family: 'Bai Jamjuree', sans-serif;
+        margin: 0.7rem 0rem;
+        width: 80%;
+        &.button-cyan {
+          @include m.buttonStyles(
+            v.$white-clr,
+            1rem,
+            400,
+            v.$cyan-clr,
+            v.$cyan-clr,
+            2rem,
+            1rem,
+            0rem
+          );
+          margin-top: 2rem;
+          box-shadow: 0px 7px 7px hsl(171, 68%, 37%, 0.25),
+            inset 0px -2px hsl(171, 68%, 37%);
+        }
+        &.button-blue {
+          @include m.buttonStyles(
+            v.$white-clr,
+            1rem,
+            400,
+            v.$light-blue,
+            v.$light-blue,
+            2rem,
+            1rem,
+            0rem
+          );
+          margin-bottom: 6rem;
+          box-shadow: 0px 7px 7px hsl(233, 45%, 50%, 0.25),
+            inset 0px -2px hsl(233, 45%, 50%);
+        }
+        &:hover {
+          filter: opacity(0.7);
+        }
+      }
+    }
+  }
+  img {
+    width: 90%;
+    margin: 3rem 0rem;
+  }
+
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedMobileScreens(41.25rem, 53.75rem, 26.25rem) {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    div {
+      &.mainText {
+        p {
+          &.text {
+            margin: 0.8rem 4.5rem;
+          }
+        }
+        &.last {
+          p {
+            &.text {
+              margin: 0.8rem 4.5rem;
+            }
+          }
+        }
+      }
+      &.middle {
+        .middleDiv {
+          .middleText {
+            p {
+              &.text {
+                margin: 0.8rem 5rem 3rem 5rem;
+              }
+            }
+          }
+        }
+      }
+      &.features {
+        div {
+          &.feature {
+            p {
+              &.text {
+                margin: 0.8rem 5rem;
+              }
+            }
+          }
+        }
+      }
+      &.download {
+        width: 80%;
+      }
+    }
+  }
+  @include m.padScreens(37.5rem, 63.938rem) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    div {
+      &.mainText {
+        p {
+          &.title {
+            font-size: 2rem;
+            margin: 5.5rem 2rem 0.5rem 2rem;
+          }
+          &.text {
+            font-size: 1rem;
+            line-height: 1.9rem;
+            margin: 0.8rem 15%;
+          }
+        }
+        &.last {
+          width: 100%;
+          margin-top: 2.5rem;
+          p {
+            &.text {
+              margin: 0.8rem 20% 1rem 20%;
+            }
+          }
+        }
+        &.second {
+          width: 100%;
+          p {
+            &.text {
+              margin: 0.8rem 20% 3rem 20%;
+            }
+          }
+        }
+        &.third {
+          width: 100%;
+          margin-bottom: 1rem;
+          p {
+            &.title {
+              margin: 4.5rem 2rem 1.2rem 2rem;
+            }
+          }
+        }
+      }
+      &.middle {
+        margin-top: 3rem;
+        img {
+          width: 65%;
+          margin: 3rem 1.5rem 3rem -6rem;
+        }
+        .middleDiv {
+          .middleText {
+            p {
+              text-align: left;
+              &.title {
+                margin: 0.5rem 2rem;
+              }
+              &.text {
+                width: 75%;
+                line-height: 1.5rem;
+                margin: 0.8rem 2rem 1rem 2rem;
+              }
+            }
+          }
+          :nth-child(2) {
+            p {
+              &.text {
+                width: 75%;
+              }
+            }
+          }
+          :last-child {
+            margin-bottom: 0rem;
+          }
+        }
+      }
+      &.features {
+        margin: 0rem auto 3rem auto;
+        div {
+          &.feature {
+            width: 28%;
+            margin: 0rem 0.7rem;
+            p {
+              &.title {
+                margin: 0.5rem 0rem 0.5rem 0rem;
+                font-size: 1.4rem;
+              }
+              &.text {
+                margin: 0.8rem 0rem;
+                line-height: 1.8rem;
+              }
+            }
+          }
+        }
+        :first-child {
+          margin-top: 0rem;
+          &.feature {
+            img {
+              width: 2.45rem;
+            }
+          }
+        }
+        :last-child {
+          margin-bottom: 0rem;
+          &.feature {
+            img {
+              width: 3rem;
+            }
+          }
+        }
+      }
+      &.companies {
+        margin-top: 5rem;
+        width: 77%;
+        img {
+          width: 13%;
+        }
+        :first-child {
+          width: 15%;
+        }
+        :nth-child(3) {
+          width: 15%;
+        }
+        :last-child {
+          width: 11.5%;
+          margin: 2rem 0rem 2rem 0rem;
+        }
+      }
+      &.download {
+        width: 33rem;
+        button {
+          width: 47.5%;
+          margin: 2rem 0rem 4rem 0rem;
+          &.button-cyan {
+            font-size: 1.1rem;
+          }
+          &.button-blue {
+            font-size: 1.1rem;
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+    img {
+      width: 63%;
+      margin: 3rem 0rem 0rem 0rem;
+    }
+  }
+  @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    div {
+      &.mainText {
+        p {
+          &.title {
+            font-size: 2rem;
+            margin: 5.5rem 2rem 0.5rem 2rem;
+          }
+          &.text {
+            font-size: 1rem;
+            line-height: 1.9rem;
+            margin: 0.8rem 15%;
+          }
+        }
+        &.last {
+          width: 100%;
+          margin-top: 2.5rem;
+          p {
+            &.text {
+              margin: 0.8rem 20% 1rem 20%;
+            }
+          }
+        }
+        &.second {
+          width: 100%;
+          p {
+            &.text {
+              margin: 0.8rem 20% 3rem 20%;
+            }
+          }
+        }
+        &.third {
+          width: 100%;
+          margin-bottom: 1rem;
+          p {
+            &.title {
+              margin: 4.5rem 2rem 1.2rem 2rem;
+            }
+          }
+        }
+      }
+      &.middle {
+        margin-top: 3rem;
+        img {
+          width: 65%;
+          margin: 3rem 1.5rem 3rem -6rem;
+        }
+        .middleDiv {
+          .middleText {
+            p {
+              text-align: left;
+              &.title {
+                margin: 0.5rem 2rem;
+              }
+              &.text {
+                width: 75%;
+                line-height: 1.5rem;
+                margin: 0.8rem 2rem 1rem 2rem;
+              }
+            }
+          }
+          :nth-child(2) {
+            p {
+              &.text {
+                width: 75%;
+              }
+            }
+          }
+          :last-child {
+            margin-bottom: 0rem;
+          }
+        }
+      }
+      &.features {
+        margin: 0rem auto 3rem auto;
+        div {
+          &.feature {
+            width: 28%;
+            margin: 0rem 0.7rem;
+            p {
+              &.title {
+                margin: 0.5rem 0rem 0.5rem 0rem;
+                font-size: 1.4rem;
+              }
+              &.text {
+                margin: 0.8rem 0rem;
+                line-height: 1.8rem;
+              }
+            }
+          }
+        }
+        :first-child {
+          margin-top: 0rem;
+          &.feature {
+            img {
+              width: 2.45rem;
+            }
+          }
+        }
+        :last-child {
+          margin-bottom: 0rem;
+          &.feature {
+            img {
+              width: 3rem;
+            }
+          }
+        }
+      }
+      &.companies {
+        margin-top: 5rem;
+        width: 77%;
+        img {
+          width: 13%;
+        }
+        :first-child {
+          width: 15%;
+        }
+        :nth-child(3) {
+          width: 15%;
+        }
+        :last-child {
+          width: 11.5%;
+          margin: 2rem 0rem 2rem 0rem;
+        }
+      }
+      &.download {
+        width: 33rem;
+        button {
+          width: 47.5%;
+          margin: 2rem 0rem 4rem 0rem;
+          &.button-cyan {
+            font-size: 1.1rem;
+          }
+          &.button-blue {
+            font-size: 1.1rem;
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+    img {
+      width: 63%;
+      margin: 3rem 0rem 0rem 0rem;
+    }
+  }
+  @include m.wideScreens(31.25rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    div {
+      &.mainText {
+        p {
+          &.title {
+            font-size: 2.2rem;
+            margin: 5.5rem 2rem 0.5rem 2rem;
+          }
+          &.text {
+            font-size: 1.15rem;
+            line-height: 1.9rem;
+            margin: 0.8rem 25%;
+          }
+        }
+        &.last {
+          width: 100%;
+          margin-top: 2.5rem;
+          p {
+            &.text {
+              margin: 0.8rem 25% 1rem 25%;
+            }
+          }
+        }
+        &.second {
+          width: 100%;
+          p {
+            &.text {
+              margin: 0.8rem 25% 3rem 25%;
+            }
+          }
+        }
+        &.third {
+          width: 100%;
+          margin-bottom: 1rem;
+          p {
+            &.title {
+              margin: 4.5rem 2rem 1.2rem 2rem;
+            }
+          }
+        }
+      }
+      &.middle {
+        margin-top: 1rem;
+        img {
+          width: 55%;
+          margin: 3rem 4rem 3rem -2.2rem;
+        }
+        .middleDiv {
+          .middleText {
+            p {
+              text-align: left;
+              &.title {
+                margin: 0.5rem 2.5rem;
+              }
+              &.text {
+                width: 54%;
+                line-height: 1.9rem;
+              }
+            }
+          }
+          :nth-child(2) {
+            p {
+              &.text {
+                width: 65%;
+              }
+            }
+          }
+          :last-child {
+            margin-bottom: 0rem;
+          }
+        }
+      }
+      &.features {
+        margin: 0rem auto 3rem auto;
+        div {
+          &.feature {
+            width: 25%;
+            margin: 0rem 0.5rem;
+            p {
+              &.title {
+                margin: 0.5rem 0rem 0.5rem 0rem;
+              }
+              &.text {
+                margin: 0.8rem 0rem;
+                line-height: 1.8rem;
+              }
+            }
+          }
+        }
+        :first-child {
+          margin-top: 0rem;
+          &.feature {
+            img {
+              width: 2.45rem;
+            }
+          }
+        }
+        :last-child {
+          margin-bottom: 0rem;
+          &.feature {
+            img {
+              width: 3rem;
+              margin-bottom: 2.3rem;
+            }
+          }
+        }
+      }
+      &.companies {
+        margin-top: 5rem;
+        width: 77%;
+        img {
+          width: 13%;
+        }
+        :first-child {
+          width: 15%;
+        }
+        :nth-child(3) {
+          width: 15%;
+        }
+        :last-child {
+          width: 11.5%;
+          margin: 2rem 0rem 2rem 0rem;
+        }
+      }
+      &.download {
+        width: 29rem;
+        button {
+          width: 48.2%;
+          margin: 2rem 0rem 4rem 0rem;
+          &.button-cyan {
+            font-size: 1.1rem;
+          }
+          &.button-blue {
+            font-size: 1.1rem;
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+    img {
+      width: 63%;
+      margin: 3rem 0rem 0rem 0rem;
+    }
+  }
+}

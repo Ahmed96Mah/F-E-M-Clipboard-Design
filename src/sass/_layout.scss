@@ -1,0 +1,169 @@
+@use 'mixins' as m;
+
+body {
+  @include m.displayGrid(3, 1fr, 'header' 'main' 'footer');
+  header {
+    @include m.displayFlex(column, nowrap, center, center);
+    .download {
+      @include m.displayFlex(column, nowrap, center, center);
+    }
+  }
+  main {
+    @include m.displayFlex(column, nowrap, center, center);
+    div {
+      &.middle {
+        @include m.displayFlex(column, nowrap, center, center);
+      }
+      &.middleDiv {
+        @include m.displayFlex(column, nowrap, center, center);
+      }
+      &.features {
+        @include m.displayFlex(column, nowrap, center, center);
+        .feature {
+          @include m.displayFlex(column, nowrap, center, center);
+        }
+      }
+      &.companies {
+        @include m.displayFlex(column, nowrap, center, center);
+      }
+      &.download {
+        @include m.displayFlex(column, nowrap, center, center);
+      }
+    }
+  }
+  footer {
+    @include m.displayFlex(column, wrap, center, center);
+    div {
+      &.social {
+        @include m.displayFlex(row, nowrap, space-between, center);
+      }
+    }
+  }
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.padScreens(37.5rem, 63.938rem) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    header {
+      .download {
+        @include m.displayFlex(row, nowrap, space-between, center);
+      }
+    }
+    main {
+      @include m.displayFlex(column, nowrap, center, center);
+      div {
+        &.middle {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+        &.middleDiv {
+          @include m.displayFlex(column, nowrap, space-between, flex-start);
+        }
+        &.features {
+          @include m.displayFlex(row, nowrap, center, flex-start);
+          .feature {
+            @include m.displayFlex(column, nowrap, center, center);
+          }
+        }
+        &.companies {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+        &.download {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+      }
+    }
+    footer {
+      @include m.displayFlex(row, nowrap, space-around, center);
+      ul {
+        @include m.displayFlex(column, wrap, flex-start, flex-start);
+      }
+      div {
+        &.social {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+      }
+    }
+  }
+  @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    header {
+      .download {
+        @include m.displayFlex(row, nowrap, space-between, center);
+      }
+    }
+    main {
+      @include m.displayFlex(column, nowrap, center, center);
+      div {
+        &.middle {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+        &.middleDiv {
+          @include m.displayFlex(column, nowrap, space-between, flex-start);
+        }
+        &.features {
+          @include m.displayFlex(row, nowrap, center, flex-start);
+          .feature {
+            @include m.displayFlex(column, nowrap, center, center);
+          }
+        }
+        &.companies {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+        &.download {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+      }
+    }
+    footer {
+      @include m.displayFlex(row, nowrap, space-around, center);
+      ul {
+        @include m.displayFlex(column, wrap, flex-start, flex-start);
+      }
+      div {
+        &.social {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+      }
+    }
+  }
+  @include m.wideScreens(31.25rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    header {
+      .download {
+        @include m.displayFlex(row, nowrap, space-between, center);
+      }
+    }
+    main {
+      @include m.displayFlex(column, nowrap, center, center);
+      div {
+        &.middle {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+        &.middleDiv {
+          @include m.displayFlex(column, nowrap, space-between, flex-start);
+        }
+        &.features {
+          @include m.displayFlex(row, nowrap, center, flex-start);
+          .feature {
+            @include m.displayFlex(column, nowrap, center, center);
+          }
+        }
+        &.companies {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+        &.download {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+      }
+    }
+    footer {
+      @include m.displayFlex(row, nowrap, space-around, center);
+      ul {
+        @include m.displayFlex(column, wrap, flex-start, flex-start);
+      }
+      div {
+        &.social {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+      }
+    }
+  }
+}

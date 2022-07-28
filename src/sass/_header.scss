@@ -1,0 +1,159 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+header {
+  grid-area: header;
+  padding-top: 8rem;
+  background-image: url('../images/bg-header-mobile.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: 'Bai Jamjuree', sans-serif;
+  text-align: center;
+  h1 {
+    font-weight: 600;
+    color: v.$drk-grysh-blu;
+    margin: 4rem 2rem 0rem 2rem;
+  }
+  p {
+    font-weight: 400;
+    color: v.$grysh-blu;
+    line-height: 1.5rem;
+    margin: 1rem 2.1rem 1rem 2.1rem;
+  }
+  .download {
+    width: 100%;
+    button {
+      cursor: pointer;
+      font-family: 'Bai Jamjuree', sans-serif;
+      margin: 0.7rem 0rem;
+      width: 80%;
+      &.button-cyan {
+        @include m.buttonStyles(
+          v.$white-clr,
+          1rem,
+          400,
+          v.$cyan-clr,
+          v.$cyan-clr,
+          2rem,
+          1rem,
+          0rem
+        );
+        margin-top: 2rem;
+        box-shadow: 0px 7px 7px hsl(171, 68%, 37%, 0.25),
+          inset 0px -2px hsl(171, 68%, 37%);
+      }
+      &.button-blue {
+        @include m.buttonStyles(
+          v.$white-clr,
+          1rem,
+          400,
+          v.$light-blue,
+          v.$light-blue,
+          2rem,
+          1rem,
+          0rem
+        );
+        margin-bottom: 6rem;
+        box-shadow: 0px 7px 7px hsl(233, 45%, 50%, 0.25),
+          inset 0px -2px hsl(233, 45%, 50%);
+      }
+      &:hover {
+        filter: opacity(0.7);
+      }
+    }
+  }
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedMobileScreens(41.25rem, 53.75rem, 26.25rem) {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    p {
+      width: 80%;
+    }
+    .download {
+      width: 80%;
+    }
+  }
+  @include m.padScreens(37.5rem, 63.938rem) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    background-image: url('../images/bg-header-desktop.png');
+    h1 {
+      font-size: 2.4rem;
+      margin: 3.7rem 2rem 0.3rem 2rem;
+    }
+    p {
+      font-size: 1.28rem;
+      width: 65%;
+      line-height: 1.9rem;
+      margin: 0.7rem 2.1rem 1rem 2.1rem;
+    }
+    .download {
+      width: 29rem;
+      button {
+        width: 48.2%;
+        margin: 2rem 0rem 4rem 0rem;
+        &.button-cyan {
+          font-size: 1.1rem;
+        }
+        &.button-blue {
+          font-size: 1.1rem;
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+  @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    background-image: url('../images/bg-header-desktop.png');
+    h1 {
+      font-size: 2.8rem;
+      margin: 3.7rem 2rem 0.3rem 2rem;
+    }
+    p {
+      font-size: 1.28rem;
+      width: 45rem;
+      line-height: 1.9rem;
+      margin: 0.7rem 2.1rem 1rem 2.1rem;
+    }
+    .download {
+      width: 29rem;
+      button {
+        width: 48.2%;
+        margin: 2rem 0rem 4rem 0rem;
+        &.button-cyan {
+          font-size: 1.1rem;
+        }
+        &.button-blue {
+          font-size: 1.1rem;
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+  @include m.wideScreens(31.25rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    background-image: url('../images/bg-header-desktop.png');
+    h1 {
+      font-size: 2.8rem;
+      margin: 3.7rem 2rem 0.3rem 2rem;
+    }
+    p {
+      font-size: 1.28rem;
+      width: 45rem;
+      line-height: 1.9rem;
+      margin: 0.7rem 2.1rem 1rem 2.1rem;
+    }
+    .download {
+      width: 29rem;
+      button {
+        width: 48.2%;
+        margin: 2rem 0rem 4rem 0rem;
+        &.button-cyan {
+          font-size: 1.1rem;
+        }
+        &.button-blue {
+          font-size: 1.1rem;
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+}
