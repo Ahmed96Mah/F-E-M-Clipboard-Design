@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [GitHub Hosted ".github.io"]()
+- Live Site URL: [GitHub Hosted ".github.io"](https://ahmed96mah.github.io/F-E-M-Clipboard-Design/)
 
 ## My process
 
