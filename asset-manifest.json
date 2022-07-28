@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.ccf6938c.css",
-    "main.js": "/static/js/main.a1fdf8de.js",
-    "static/media/image-computer.png": "/static/media/image-computer.65db67db202be4e74616.png",
-    "static/media/bg-header-desktop.png": "/static/media/bg-header-desktop.3d39ff8e4eec581d1f91.png",
-    "static/media/image-devices.png": "/static/media/image-devices.7a9f93355333984b7941.png",
-    "static/media/bg-header-mobile.png": "/static/media/bg-header-mobile.611a5565d2de8072be1f.png",
-    "static/media/icon-preview.svg": "/static/media/icon-preview.9d260cdcabe46fdc423492bfe2e317cf.svg",
-    "static/media/icon-blacklist.svg": "/static/media/icon-blacklist.00461066f8dc77314608696b24ffca29.svg",
-    "static/media/icon-instagram.svg": "/static/media/icon-instagram.6916c290ec7f973be569508e95332846.svg",
-    "static/media/icon-text.svg": "/static/media/icon-text.72e88c25f84b1cf1d3f69a697f689f64.svg",
-    "index.html": "/index.html",
-    "static/media/icon-twitter.svg": "/static/media/icon-twitter.09334153919ab7925dce3b54b4b9a815.svg",
-    "static/media/icon-facebook.svg": "/static/media/icon-facebook.7e5a10f05d754f6e65372e20a5452d60.svg",
-    "static/media/logo.svg": "/static/media/logo.99709bee9527fac7b703e0053be7feda.svg",
-    "main.ccf6938c.css.map": "/static/css/main.ccf6938c.css.map",
-    "main.a1fdf8de.js.map": "/static/js/main.a1fdf8de.js.map"
+    "main.css": "/F-E-M-Clipboard-Design/static/css/main.4c3f8920.css",
+    "main.js": "/F-E-M-Clipboard-Design/static/js/main.20dbfab4.js",
+    "static/media/image-computer.png": "/F-E-M-Clipboard-Design/static/media/image-computer.65db67db202be4e74616.png",
+    "static/media/bg-header-desktop.png": "/F-E-M-Clipboard-Design/static/media/bg-header-desktop.3d39ff8e4eec581d1f91.png",
+    "static/media/image-devices.png": "/F-E-M-Clipboard-Design/static/media/image-devices.7a9f93355333984b7941.png",
+    "static/media/bg-header-mobile.png": "/F-E-M-Clipboard-Design/static/media/bg-header-mobile.611a5565d2de8072be1f.png",
+    "static/media/icon-preview.svg": "/F-E-M-Clipboard-Design/static/media/icon-preview.9d260cdcabe46fdc423492bfe2e317cf.svg",
+    "static/media/icon-blacklist.svg": "/F-E-M-Clipboard-Design/static/media/icon-blacklist.00461066f8dc77314608696b24ffca29.svg",
+    "static/media/icon-instagram.svg": "/F-E-M-Clipboard-Design/static/media/icon-instagram.6916c290ec7f973be569508e95332846.svg",
+    "index.html": "/F-E-M-Clipboard-Design/index.html",
+    "static/media/icon-text.svg": "/F-E-M-Clipboard-Design/static/media/icon-text.72e88c25f84b1cf1d3f69a697f689f64.svg",
+    "static/media/icon-twitter.svg": "/F-E-M-Clipboard-Design/static/media/icon-twitter.09334153919ab7925dce3b54b4b9a815.svg",
+    "static/media/icon-facebook.svg": "/F-E-M-Clipboard-Design/static/media/icon-facebook.7e5a10f05d754f6e65372e20a5452d60.svg",
+    "static/media/logo.svg": "/F-E-M-Clipboard-Design/static/media/logo.99709bee9527fac7b703e0053be7feda.svg",
+    "main.4c3f8920.css.map": "/F-E-M-Clipboard-Design/static/css/main.4c3f8920.css.map",
+    "main.20dbfab4.js.map": "/F-E-M-Clipboard-Design/static/js/main.20dbfab4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccf6938c.css",
-    "static/js/main.a1fdf8de.js"
+    "static/css/main.4c3f8920.css",
+    "static/js/main.20dbfab4.js"
   ]
 }
