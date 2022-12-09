@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/F-E-M-Clipboard-Design/static/css/main.4c3f8920.css",
-    "main.js": "/F-E-M-Clipboard-Design/static/js/main.8e810182.js",
+    "main.js": "/F-E-M-Clipboard-Design/static/js/main.9d3395ca.js",
     "static/media/image-computer.png": "/F-E-M-Clipboard-Design/static/media/image-computer.65db67db202be4e74616.png",
     "static/media/bg-header-desktop.png": "/F-E-M-Clipboard-Design/static/media/bg-header-desktop.3d39ff8e4eec581d1f91.png",
     "static/media/image-devices.png": "/F-E-M-Clipboard-Design/static/media/image-devices.7a9f93355333984b7941.png",
@@ -15,10 +15,10 @@
     "static/media/icon-facebook.svg": "/F-E-M-Clipboard-Design/static/media/icon-facebook.7e5a10f05d754f6e65372e20a5452d60.svg",
     "static/media/logo.svg": "/F-E-M-Clipboard-Design/static/media/logo.99709bee9527fac7b703e0053be7feda.svg",
     "main.4c3f8920.css.map": "/F-E-M-Clipboard-Design/static/css/main.4c3f8920.css.map",
-    "main.8e810182.js.map": "/F-E-M-Clipboard-Design/static/js/main.8e810182.js.map"
+    "main.9d3395ca.js.map": "/F-E-M-Clipboard-Design/static/js/main.9d3395ca.js.map"
   },
   "entrypoints": [
     "static/css/main.4c3f8920.css",
-    "static/js/main.8e810182.js"
+    "static/js/main.9d3395ca.js"
   ]
 }
