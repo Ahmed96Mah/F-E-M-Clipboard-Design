@@ -34,8 +34,11 @@ body {
   footer {
     @include m.displayFlex(column, wrap, center, center);
     div {
-      &.social {
-        @include m.displayFlex(row, nowrap, space-between, center);
+      &#top {
+        @include m.displayFlex(column, wrap, center, center);
+        .social {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
       }
     }
   }
@@ -71,13 +74,18 @@ body {
       }
     }
     footer {
-      @include m.displayFlex(row, nowrap, space-around, center);
-      ul {
-        @include m.displayFlex(column, wrap, flex-start, flex-start);
-      }
+      @include m.displayFlex(column, nowrap, center, center);
       div {
-        &.social {
+        &#top {
           @include m.displayFlex(row, nowrap, space-between, center);
+          nav {
+            ul {
+              @include m.displayFlex(column, wrap, flex-start, flex-start);
+            }
+          }
+          .social {
+            @include m.displayFlex(row, nowrap, space-between, center);
+          }
         }
       }
     }
@@ -113,13 +121,18 @@ body {
       }
     }
     footer {
-      @include m.displayFlex(row, nowrap, space-around, center);
-      ul {
-        @include m.displayFlex(column, wrap, flex-start, flex-start);
-      }
+      @include m.displayFlex(column, nowrap, center, center);
       div {
-        &.social {
+        &#top {
           @include m.displayFlex(row, nowrap, space-between, center);
+          nav {
+            ul {
+              @include m.displayFlex(column, wrap, flex-start, flex-start);
+            }
+          }
+          .social {
+            @include m.displayFlex(row, nowrap, space-between, center);
+          }
         }
       }
     }
@@ -155,13 +168,18 @@ body {
       }
     }
     footer {
-      @include m.displayFlex(row, nowrap, space-around, center);
-      ul {
-        @include m.displayFlex(column, wrap, flex-start, flex-start);
-      }
+      @include m.displayFlex(column, nowrap, center, center);
       div {
-        &.social {
+        &#top {
           @include m.displayFlex(row, nowrap, space-between, center);
+          nav {
+            ul {
+              @include m.displayFlex(column, wrap, flex-start, flex-start);
+            }
+          }
+          .social {
+            @include m.displayFlex(row, nowrap, space-between, center);
+          }
         }
       }
     }

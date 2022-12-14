@@ -67,7 +67,13 @@ body footer {
   justify-content: center;
   align-items: center;
 }
-body footer div.social {
+body footer div#top {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+body footer div#top .social {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -127,17 +133,23 @@ body footer div.social {
   }
   body footer {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
   }
-  body footer ul {
+  body footer div#top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body footer div#top nav ul {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  body footer div.social {
+  body footer div#top .social {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -198,17 +210,23 @@ body footer div.social {
   }
   body footer {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
   }
-  body footer ul {
+  body footer div#top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body footer div#top nav ul {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  body footer div.social {
+  body footer div#top .social {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -269,17 +287,23 @@ body footer div.social {
   }
   body footer {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
   }
-  body footer ul {
+  body footer div#top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body footer div#top nav ul {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  body footer div.social {
+  body footer div#top .social {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -961,45 +985,62 @@ footer {
   padding-top: 3.5rem;
   /* ----------------------- Media Queries ----------------------- */
 }
-footer img {
+footer div#top img {
   width: 3.3rem;
   margin-bottom: 1rem;
 }
-footer nav ul {
+footer div#top nav ul {
   font-family: 'Bai Jamjuree', sans-serif;
   font-weight: 400;
   list-style-type: none;
   padding-left: 0rem;
   line-height: 3rem;
 }
-footer nav ul li {
+footer div#top nav ul li {
   text-align: center;
   font-size: 1.1rem;
 }
-footer nav ul li a {
+footer div#top nav ul li a {
   text-decoration: none;
   color: hsl(210deg, 10%, 33%);
 }
-footer nav ul li a:hover {
+footer div#top nav ul li a:hover {
   color: hsl(171deg, 66%, 44%);
 }
-footer div.social {
-  width: 40%;
+footer div#top div.social {
+  width: 100%;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
-footer div.social a img {
+footer div#top div.social a img {
   width: 1.5rem;
 }
-footer div.social a img:hover {
+footer div#top div.social a img:hover {
   filter: invert(58%) sepia(62%) saturate(468%) hue-rotate(122deg)
     brightness(91%) contrast(94%);
+}
+footer div#bottom {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+footer div#bottom p {
+  text-align: center;
+  line-height: 1.5rem;
+  color: hsl(210deg, 10%, 33%);
+  margin: 1rem 0.8rem;
+}
+footer div#bottom p a {
+  margin-left: 0.3rem;
+  color: hsl(171deg, 66%, 44%);
+  text-decoration: none;
 }
 @media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
   footer {
     /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
   }
-  footer div.social {
+  footer div#top {
+    width: 95%;
+  }
+  footer div#top div.social {
     width: 11rem;
   }
 }
@@ -1008,13 +1049,16 @@ footer div.social a img:hover {
     /* ------ ($min-wdth, $max-wdth) ------ */
     padding: 1rem 2% 0rem 2%;
   }
-  footer nav {
+  footer div#top {
+    width: 95%;
+  }
+  footer div#top nav {
     width: 65%;
   }
-  footer nav ul {
+  footer div#top nav ul {
     height: 7rem;
   }
-  footer div.social {
+  footer div#top div.social {
     width: 6.5rem;
   }
 }
@@ -1024,13 +1068,16 @@ footer div.social a img:hover {
     padding-top: 1rem;
     padding: 1rem 5.5% 0rem 5.5%;
   }
-  footer nav {
+  footer div#top {
+    width: 95%;
+  }
+  footer div#top nav {
     width: 35rem;
   }
-  footer nav ul {
+  footer div#top nav ul {
     height: 7rem;
   }
-  footer div.social {
+  footer div#top div.social {
     width: 7rem;
   }
 }
@@ -1040,13 +1087,16 @@ footer div.social a img:hover {
     padding-top: 1rem;
     padding: 1rem 5.5% 0rem 5.5%;
   }
-  footer nav {
+  footer div#top {
+    width: 95%;
+  }
+  footer div#top nav {
     width: 35rem;
   }
-  footer nav ul {
+  footer div#top nav ul {
     height: 7rem;
   }
-  footer div.social {
+  footer div#top div.social {
     width: 7rem;
   }
 }

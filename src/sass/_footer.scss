@@ -4,42 +4,60 @@
 footer {
   background-color: hsla(202, 11%, 66%, 0.1);
   padding-top: 3.5rem;
-  img {
-    width: 3.3rem;
-    margin-bottom: 1rem;
-  }
-  nav {
-    ul {
-      font-family: 'Bai Jamjuree', sans-serif;
-      font-weight: 400;
-      list-style-type: none;
-      padding-left: 0rem;
-      line-height: 3rem;
-      li {
-        text-align: center;
-        font-size: 1.1rem;
-        a {
-          text-decoration: none;
-          color: v.$drk-grysh-blu;
-          &:hover {
-            color: v.$cyan-clr;
+  div {
+    &#top {
+      img {
+        width: 3.3rem;
+        margin-bottom: 1rem;
+      }
+      nav {
+        ul {
+          font-family: 'Bai Jamjuree', sans-serif;
+          font-weight: 400;
+          list-style-type: none;
+          padding-left: 0rem;
+          line-height: 3rem;
+          li {
+            text-align: center;
+            font-size: 1.1rem;
+            a {
+              text-decoration: none;
+              color: v.$drk-grysh-blu;
+              &:hover {
+                color: v.$cyan-clr;
+              }
+            }
+          }
+        }
+      }
+      div {
+        &.social {
+          width: 100%;
+          margin-top: 1.5rem;
+          margin-bottom: 2.5rem;
+          a {
+            img {
+              width: 1.5rem;
+              &:hover {
+                filter: invert(58%) sepia(62%) saturate(468%) hue-rotate(122deg)
+                  brightness(91%) contrast(94%);
+              }
+            }
           }
         }
       }
     }
-  }
-  div {
-    &.social {
-      width: 40%;
-      margin-top: 1.5rem;
-      margin-bottom: 2.5rem;
-      a {
-        img {
-          width: 1.5rem;
-          &:hover {
-            filter: invert(58%) sepia(62%) saturate(468%) hue-rotate(122deg)
-              brightness(91%) contrast(94%);
-          }
+    &#bottom {
+      font-family: 'Bai Jamjuree', sans-serif;
+      p {
+        text-align: center;
+        line-height: 1.5rem;
+        color: v.$drk-grysh-blu;
+        margin: 1rem 0.8rem;
+        a {
+          margin-left: 0.3rem;
+          color: v.$cyan-clr;
+          text-decoration: none;
         }
       }
     }
@@ -49,23 +67,33 @@ footer {
   @include m.flippedMobileScreens(41.25rem, 53.75rem, 26.25rem) {
     /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
     div {
-      &.social {
-        width: 11rem;
+      &#top {
+        width: 95%;
+        div {
+          &.social {
+            width: 11rem;
+          }
+        }
       }
     }
   }
   @include m.padScreens(37.5rem, 63.938rem) {
     /* ------ ($min-wdth, $max-wdth) ------ */
     padding: 1rem 2% 0rem 2%;
-    nav {
-      width: 65%;
-      ul {
-        height: 7rem;
-      }
-    }
     div {
-      &.social {
-        width: 6.5rem;
+      &#top {
+        width: 95%;
+        nav {
+          width: 65%;
+          ul {
+            height: 7rem;
+          }
+        }
+        div {
+          &.social {
+            width: 6.5rem;
+          }
+        }
       }
     }
   }
@@ -73,15 +101,20 @@ footer {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
     padding-top: 1rem;
     padding: 1rem 5.5% 0rem 5.5%;
-    nav {
-      width: 35rem;
-      ul {
-        height: 7rem;
-      }
-    }
     div {
-      &.social {
-        width: 7rem;
+      &#top {
+        width: 95%;
+        nav {
+          width: 35rem;
+          ul {
+            height: 7rem;
+          }
+        }
+        div {
+          &.social {
+            width: 7rem;
+          }
+        }
       }
     }
   }
@@ -89,15 +122,20 @@ footer {
     /* ------ ($min-hgt, $min-wdth) ------ */
     padding-top: 1rem;
     padding: 1rem 5.5% 0rem 5.5%;
-    nav {
-      width: 35rem;
-      ul {
-        height: 7rem;
-      }
-    }
     div {
-      &.social {
-        width: 7rem;
+      &#top {
+        width: 95%;
+        nav {
+          width: 35rem;
+          ul {
+            height: 7rem;
+          }
+        }
+        div {
+          &.social {
+            width: 7rem;
+          }
+        }
       }
     }
   }

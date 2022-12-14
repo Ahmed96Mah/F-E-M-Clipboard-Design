@@ -111,44 +111,71 @@ function App() {
         </div>
       </main>
       <footer>
-        <img src={logo} alt="Clipboard Logo" />
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/">FAQs</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/">Contact Us</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/">Press Kit</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/">Install Guide</a>
-            </li>
-          </ul>
-        </nav>
-        <div className="social">
-          <a
-            href="https://web.facebook.com/frontendmentor"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image src={F} alt="facebook page" />
-          </a>
-          <a
-            href="https://twitter.com/frontendmentor"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image src={T} alt="twitter page" />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-            <Image src={I} alt="instagram page" />
-          </a>
+        <div id="top">
+          <img src={logo} alt="Clipboard Logo" />
+          <nav>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/">FAQs</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">Contact Us</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">Press Kit</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">Install Guide</a>
+              </li>
+            </ul>
+          </nav>
+          <div className="social">
+            <a
+              href="https://web.facebook.com/frontendmentor"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={F} alt="facebook page" />
+            </a>
+            <a
+              href="https://twitter.com/frontendmentor"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={T} alt="twitter page" />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={I} alt="instagram page" />
+            </a>
+          </div>
+        </div>
+        <div id="bottom">
+          <p>
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Frontend Mentor
+            </a>
+            . Coded by
+            <a
+              href="https://www.frontendmentor.io/profile/Ahmed96Mah"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ahmed Mahmoud Abdalwahab
+            </a>
+            .
+          </p>
         </div>
       </footer>
     </div>
